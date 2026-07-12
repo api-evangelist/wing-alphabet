@@ -47,6 +47,10 @@ modified: '2026-05-25'
 specificationVersion: '0.20'
 apis: []
 common:
+  - type: VulnerabilityDisclosure
+    url: security/wing-alphabet-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/wing-alphabet-domain-security.yml
   - type: Website
     url: https://wing.com
   - type: Technology
