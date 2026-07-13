@@ -2,11 +2,13 @@
   "repo": "wing-alphabet",
   "feeds": [
     {
-      "source": "https://blog.wing.com",
+      "source": "https://wing.com/resource-hub",
+      "feed_url": "https://wing.com/resource-hub",
+      "title": "",
       "saved": 0,
-      "error": "fetch failed (socket closed) on blog listing"
+      "method": "none"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-27T13:20:59Z"
+  "fetched": "2026-07-11T11:50:51Z"
 }
