@@ -65,10 +65,12 @@ tags:
   - InterUSS
 url: https://raw.githubusercontent.com/api-evangelist/wing-alphabet/refs/heads/main/apis.yml
 created: '2026-05-25'
-modified: '2026-05-25'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+  - url: https://wing.com/news
+    type: Blog
   - type: VulnerabilityDisclosure
     url: security/wing-alphabet-vulnerability-disclosure.yml
   - type: DomainSecurity
