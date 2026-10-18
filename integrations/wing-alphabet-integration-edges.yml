@@ -1,0 +1,92 @@
+edges:
+- partner_name: FAA LAANC
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.faa.gov/uas/getting_started/laanc#approved
+  category: FAA-approved LAANC UAS Service Supplier
+  contract_reference:
+    register: FAA Approved LAANC UAS Service Suppliers (faa.gov/uas/getting_started/laanc)
+    standard: FAA LAANC
+    spec_file: null
+    role: laanc-uss
+    registered_name: Wing
+    register_id: Wing
+    matched_domain: wing.com
+    matched_by: domain
+    domain_source: register link
+    public_service: true
+    certified_products:
+    - product: LAANC USS
+      lapsed: false
+    signal_note: 'one certified product: the FAA approval (agreement after technical onboarding); public vs non-public
+      service is context. The page lists current approvals only (lapsed never readable)'
+    detected_by: sweep-drones-airspace.py
+    detected: '2026-10-18'
+  detected_by: sweep-drones-airspace.py
+  first_seen: '2026-10-18'
+- partner_name: InterUSS Platform
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://interussplatform.org/members/
+  category: InterUSS Platform member
+  contract_reference:
+    register: InterUSS Platform members (https://interussplatform.org/members/)
+    standard: InterUSS (UTM / U-space DSS)
+    spec_file: null
+    role: member
+    registered_name: Wing Aviation LLC
+    register_id: Wing Aviation LLC
+    matched_domain: wing.com
+    matched_by: domain+verified
+    domain_source: register link
+    verified: InterUSS member logo 'Wing Aviation LLC' links wing.com; Wing Aviation LLC is Wing's legal name and
+      the wing-alphabet repo is Wing (wing.com)
+    signal_note: 'participation only: membership, nothing certified'
+    detected_by: sweep-drones-airspace.py
+    detected: '2026-10-18'
+  detected_by: sweep-drones-airspace.py
+  first_seen: '2026-10-18'
+- partner_name: GUTMA
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://gutma.org/full-members/
+  category: GUTMA member
+  contract_reference:
+    register: GUTMA members (https://gutma.org/full-members/)
+    standard: GUTMA (Global UTM Association)
+    spec_file: null
+    role: member
+    registered_name: Wing
+    register_id: Wing
+    matched_domain: wing.com
+    matched_by: domain
+    domain_source: register link
+    signal_note: 'participation only: membership, nothing certified'
+    detected_by: sweep-drones-airspace.py
+    detected: '2026-10-18'
+  detected_by: sweep-drones-airspace.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://www.faa.gov/uas/getting_started/laanc
+- https://uasdoc.faa.gov/api/v1/publicDOCRev?pageIndex=0&itemsPerPage=2000
+- https://interussplatform.org/members/
+- https://gutma.org/full-members/
+checked:
+- https://gutma.org/full-members/
+- https://interussplatform.org/members/
+- https://uasdoc.faa.gov/api/v1/publicDOCRev?pageIndex=0&itemsPerPage=2000
+- https://www.faa.gov/uas/getting_started/laanc
