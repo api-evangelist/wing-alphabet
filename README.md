@@ -1,0 +1,97 @@
+# Wing
+
+<!-- API-EVANGELIST-PROVENANCE:BEGIN -->
+> ### About this repository
+>
+> **This is not our API.** This repository is an independent, third-party profile of a company's
+> **publicly available** API surface, maintained by [API Evangelist](https://apievangelist.com).
+> API Evangelist does not operate, host, resell, or support this company's APIs, and is not
+> affiliated with or endorsed by the company unless stated on the profile.
+>
+> **Where the information came from.** Everything here is assembled from material a member of the
+> public can reach with a browser and no credentials — the company's own website, developer portal
+> and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema,
+> `apis.json`, `llms.txt` and similar), its public repositories, and its public status, pricing and
+> changelog pages. **Nothing here is obtained by breaching a system, defeating an access control, or
+> using credentials of any kind.**
+>
+> **The rating is an independent assessment.** The Kin Score and Agent Readiness rating are
+> independently calculated scores of a company's *public* API artifacts, produced by API Evangelist
+> against a published rubric. They are not certifications, endorsements, security assessments, or
+> audits, and they score published artifacts — not the quality, safety, or security of the software.
+>
+> **Corrections, re-scores, and removal are free.** No partnership, contract, or purchase is
+> required, and you do not need to justify the request.
+>
+> - **Something wrong?** Open an issue on this repository, or email
+>   [info@apievangelist.com](mailto:info@apievangelist.com).
+> - **Published something new?** Ask for a re-score and we will re-run the rating.
+> - **Want the listing taken down?** Say so and we will honor it. The profile is reduced to your
+>   company name, a factual description, and a link to your own site, and the company is recorded as
+>   **unrated** — never scored zero for having asked.
+>
+> **Response times.** Acknowledgement within **one business day**; removal or restriction within
+> **two business days**; corrections and re-scores within **five business days**.
+>
+> **Not from the company, and here with a question?** You are welcome here — we would rather be the
+> front line and point you the right way than have a good report go nowhere. What this repository
+> can answer is narrow, though, so it is worth knowing who you are actually looking for:
+>
+> - **A question about how the API works, an account, billing, or a bug in the service** — that is
+>   the company's own support, not us. We profile this API; we do not operate it and cannot see
+>   your account.
+> - **A bug in an open-source project we only catalog** — file it on that project's own repository.
+>   This has happened with a real and correct bug report that reached us instead of the people who
+>   could fix it, which helped nobody.
+> - **Anything about this listing itself** — the description, the tags, the rating, a missing or
+>   wrong artifact — is ours. Open an issue here.
+> - **Not sure, or something general about API Evangelist or APIs.io** — open an issue on the
+>   [APIs.io Inbox](https://github.com/api-search/inbox) and we will route it.
+>
+> **This repository contains no software, and we will never ask you to download anything.** There is
+> no build, release, installer, or binary here — only text and machine-readable API descriptions, so
+> there is nothing here that can be "corrupt" or need "repairing". Any issue, comment, or email
+> claiming otherwise and offering a download link is not from us and is hostile. Do not follow the
+> link; it is a lure. Report it to GitHub and, if you like, tell us at
+> [info@apievangelist.com](mailto:info@apievangelist.com) so we can take it down.
+>
+> **On a security or compliance team?** Email
+> [info@apievangelist.com](mailto:info@apievangelist.com) with *security* in the subject line and
+> you will get a person, not a form. We will tell you exactly which public URLs this profile was
+> built from so your team can see the same surface we did, and we will take the listing down on
+> request while you work through it.
+>
+> Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
+<!-- API-EVANGELIST-PROVENANCE:END -->
+
+Wing is Alphabet's drone delivery subsidiary, spun out of Google X in 2018. Wing designs, builds, and operates small fixed-wing electric VTOL aircraft that autonomously pick up and deliver packages to customers' homes, and operates an unmanned traffic management (UTM) stack used by drone pilots and aviation authorities.
+
+This repository is an [API Evangelist](https://apievangelist.com) profile of Wing — a Tier-3 catalog entry, meaning the company exposes real commercial APIs but does not publish open documentation, OpenAPI specs, or a developer portal.
+
+## What Wing Operates
+
+Wing runs two distinct technical surfaces, both of which have APIs that are real but private:
+
+- **Wing Delivery Platform** — the partner-only API and UI suite that lets retailers, restaurants, and logistics providers embed drone delivery into their own order flow. Public docs describe three high-level capabilities: assess drone delivery availability for an address, request a delivery, and provide real-time tracking of an in-flight package. Integration is gated through `partnerships@wing.com` and a Wing technical team — there is no self-serve developer portal. Known partners include Walmart, DoorDash, and Papa Johns.
+- **OpenSky** — a consumer-facing drone airspace authorization app (FAA-approved LAANC USS in the United States; approved by CASA in Australia). Wing publishes an OpenSky API that allows companies to embed OpenSky's flight-brief and airspace-authorization flow inside their own apps, but the API itself is partner-only.
+
+Wing also co-founded the [InterUSS Platform](https://github.com/interuss), an open-source UTM project that implements the ASTM F3411 Remote ID standard and the Discovery and Synchronization Service (DSS) — InterUSS is now hosted by the Linux Foundation and lives in its own organization rather than under Wing's GitHub.
+
+## Why Tier-3
+
+This profile is Tier-3 (catalog stub) rather than Tier-1 (fully artifacted) because:
+
+- No public OpenAPI, AsyncAPI, JSON Schema, or developer reference exists for either the Wing Delivery Platform API or the OpenSky API.
+- The [`wing-aviation`](https://github.com/wing-aviation) GitHub organization is empty and archived — Wing does not publish SDKs, clients, or sample code under its own org.
+- The published technical material (wing.com/technology, wing.com/solutions, wing.com/partner, the partner blog posts) describes API behavior at a marketing level but does not document endpoints, request/response shapes, authentication, rate limits, or pricing.
+
+Per the api-evangelist pipeline rules, no placeholder OpenAPI, Spectral rulesets, Naftiko capabilities, or schemas have been generated. If Wing publishes a partner developer portal or OpenAPI in the future, this repo will be re-run through the full pipeline and promoted to Tier-1.
+
+## Files
+
+- [`apis.yml`](./apis.yml) — APIs.json 0.20 catalog entry for Wing, with company description, tags, and the canonical set of `common` links (website, technology, partner program, OpenSky, aviation partners, GitHub org, InterUSS, LAANC, social).
+- `README.md` — this file.
+
+## Maintainer
+
+- Kin Lane — kin@apievangelist.com
